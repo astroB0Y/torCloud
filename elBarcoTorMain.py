@@ -88,7 +88,7 @@ def export_channels(channel_dict, export_file):
 #api_hash = '9a97fd9dc96e745d5b8869966e21ace7'
 #peer_channel_id = -1727304456
 
-async def export_messages(export_file = "https://github.com/astroB0Y/torCloud/blob/main/tags.txt"):
+async def export_messages(export_file = "tags.txt"):
 
     #async with TelegramClient('jgutierrezperez', api_id, api_hash) as client:
         #channel_name = await client.get_entity(PeerChannel(peer_channel_id))
