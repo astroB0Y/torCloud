@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '0 0 * * 1' # At 00:00 on Monday
+    - cron: '* * * * *'
 
 jobs:
   build:
@@ -23,8 +23,6 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script # run main.py
-        env:
-          SOME_SECRET: ${{ secrets.SOME_SECRET }}
         run: python main.py
           
       - name: commit files
@@ -37,5 +35,4 @@ jobs:
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main 
