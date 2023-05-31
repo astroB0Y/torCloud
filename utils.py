@@ -51,13 +51,13 @@ tvg_ids_logos = {'GOL MUNDIAL HD': 'https://i.postimg.cc/3ryZ9n8G/golmundial.png
                  'I873.76943.schedulesdirect.org': 'https://i.imgur.com/XcjYBfj.png',
                  'M+ Ellas #V HD': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJqKK0A9bLjjrmoL23GSawBsgag9Q63grvjKwmRoKfHseFfXcmzHs8JCUlWJ-yyDLWnTw&usqp=CAU',
                  #ESPN COLOMBIA
-                 'I249.19158.schedulesdirect.org': 'https://i.ibb.co/CBW0Z8K/Espn.png',
+                 'I249.19158.schedulesdirect.org': 'https://raw.githubusercontent.com/astroB0Y/logos/main/ESPN.jpg',
                  #ESPN2 COLOMBIA
-                 'I254.37747.schedulesdirect.org': 'https://i.ibb.co/vhbwwMZ/ESPN2.png',
+                 'I254.37747.schedulesdirect.org': 'https://raw.githubusercontent.com/astroB0Y/logos/main/ESPN2.jpg',
                  #ESPN3 COLOMBIA
-                 'I261.79042.schedulesdirect.org': 'https://i.ibb.co/1rQdNFn/Espn3.png',
+                 'I261.79042.schedulesdirect.org': 'https://raw.githubusercontent.com/astroB0Y/logos/main/ESPN3.jpg',
                  #ESPN EXTRA COLOMBIA
-                 'I898.65930.schedulesdirect.org': 'https://i.ibb.co/4M4zqSm/espnextra.png',
+                 'I898.65930.schedulesdirect.org': 'https://raw.githubusercontent.com/astroB0Y/logos/main/ESPNextra.jpg',
                  'FOX': 'https://img2.freepng.es/20180614/iju/kisspng-fox-broadcasting-company-logo-television-fox-inter-television-program-5b2265b47733b2.8204491215289809164883.jpg',
                  'NBA': 'https://i.imgur.com/4QrPlos.png',
                  #TENNIS CHANNEL
