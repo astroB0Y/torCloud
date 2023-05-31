@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from torpy.http.requests import TorRequests
 
 
-sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='latin1')
+#sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='latin1')
 
 
 def scraper():
