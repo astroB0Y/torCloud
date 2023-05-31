@@ -111,8 +111,8 @@ def export_channels(channel_dict, export_file):
                                                .replace("CHANNELTITLE", channel_info["channel_name"])
 
 
-    with open(export_file, "w") as f:
-        f.write(all_channels)
+    with open(export_file, "wb") as f:
+        f.write(all_channels.encode("latin1"))
 
 
 #api_id = 18062170
