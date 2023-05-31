@@ -10,7 +10,7 @@ import asyncio
 
 
 
-#LOGGING?#########################################################
+#LOGGING?###############################################################################
 
 import logging
 import logging.handlers
@@ -37,7 +37,7 @@ except KeyError:
     #logger.info("Token not available!")
     #raise
 
-#END LOGING?#########################################################
+#END LOGING?############################################################################
 
 
 def cleanse_message(message_content):
