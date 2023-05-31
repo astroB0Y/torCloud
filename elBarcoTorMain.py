@@ -1,21 +1,19 @@
-#from telethon.sync import TelegramClient
 from git import Repo
 import utils as u
 import re
 from elBarcoTorScraper import *
 import asyncio
+#from telethon.sync import TelegramClient
 #from telethon import TelegramClient
 #from telethon.tl.types import PeerChannel
-# TODO encode channel names to latin1. As a workaround, beIN and Barsa now are hardcoded
 
 
 
-#LOGGING?###############################################################################
+# LOGGING WITH SECRETS
 
 import logging
 import logging.handlers
 import os
-
 import requests
 
 logger = logging.getLogger(__name__)
@@ -37,7 +35,7 @@ except KeyError:
     #logger.info("Token not available!")
     #raise
 
-#END LOGING?############################################################################
+    
 
 
 def cleanse_message(message_content):
