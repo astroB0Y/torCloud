@@ -3,6 +3,7 @@ import utils as u
 import re
 from elBarcoTorScraper import *
 import asyncio
+import os
 #from telethon.sync import TelegramClient
 #from telethon import TelegramClient
 #from telethon.tl.types import PeerChannel
