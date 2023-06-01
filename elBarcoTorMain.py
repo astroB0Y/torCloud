@@ -147,7 +147,9 @@ async def export_messages(export_file = "tags.txt"):
 
 def main():
     asyncio.run(export_messages())
-
+    
+    
+'''
 def gitUpdate():
     gitRepo = r'/Users/Jorge/Documents/AcestreamScraper/AceTorScraper/github'
     commitMessage = 'tags updated'
@@ -162,6 +164,8 @@ def gitUpdate():
         print("updating_github : INFO : list updated to github")
     except:
         print("updating_github : ERROR : some error occured while pushing the code")
+'''
+
 
 if __name__ == "__main__":
     main()
