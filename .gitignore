@@ -47,4 +47,4 @@ env.bak/
 venv.bak/
 
 #Custom
-#requirements.txt
+requirements.txt
