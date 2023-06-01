@@ -10,7 +10,7 @@ import asyncio
 
 
 # LOGGING WITH SECRETS
-
+"""
 import logging
 import logging.handlers
 import os
@@ -27,7 +27,7 @@ logger_file_handler = logging.handlers.RotatingFileHandler(
 formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 logger_file_handler.setFormatter(formatter)
 logger.addHandler(logger_file_handler)
-
+"""
 try:
     SOME_SECRET = os.environ["SOME_SECRET"]
 except KeyError:
