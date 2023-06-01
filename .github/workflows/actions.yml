@@ -3,9 +3,11 @@ name: run main.py
 on:
   schedule:
     # Run every minute (every 5 minutes only in GitHub)
-    - cron: '* * * * *'
+    #- cron: '* * * * *'
     # Run every half an hour
     #- cron: '0,30 */1 * * *'
+    # Run hourly
+    - cron: '0 * * * *'
 
 jobs:
   build:
