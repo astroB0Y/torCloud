@@ -37,8 +37,6 @@ except KeyError:
     #raise
 
     
-
-
 def cleanse_message(message_content):
     cleansed_content = ""
     rows = [row for row in message_content.split("\n") if len(row.strip()) > 0]
