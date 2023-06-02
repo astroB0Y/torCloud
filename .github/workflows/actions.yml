@@ -1,6 +1,7 @@
 name: run main.py
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
 
   #schedule:
     # Run every minute (every 5 minutes only in GitHub)
