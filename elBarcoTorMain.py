@@ -10,25 +10,8 @@ import os
 
 
 
-# LOGGING WITH SECRETS
-"""
-import logging
-import logging.handlers
-import os
-import requests
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-logger_file_handler = logging.handlers.RotatingFileHandler(
-    "status.log",
-    maxBytes=1024 * 1024,
-    backupCount=1,
-    encoding="utf8",
-)
-formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-logger_file_handler.setFormatter(formatter)
-logger.addHandler(logger_file_handler)
-"""
+# LOG IN IN GITHUB
+'''
 try:
     SOME_SECRET = os.environ["SOME_SECRET"]
 except KeyError:
@@ -49,7 +32,7 @@ def cleanse_message(message_content):
                 else:
                   cleansed_content += "UNTITLED CHANNEL" + "\n" + row + "\n"
     return cleansed_content
-
+'''
 
 def update_channel_dict(message_content, channel_dict):
     rows = message_content.split("\n")
@@ -148,7 +131,8 @@ async def export_messages(export_file = "tags.txt"):
 def main():
     asyncio.run(export_messages())
     
-    
+ 
+# COMMIT Y PUSH SE HACEN DESDE actions.yml
 '''
 def gitUpdate():
     gitRepo = r'/Users/Jorge/Documents/AcestreamScraper/AceTorScraper/github'
