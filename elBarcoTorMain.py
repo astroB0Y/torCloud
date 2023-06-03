@@ -17,6 +17,11 @@ except KeyError:
     #logger.info("Token not available!")
     #raise
 '''
+
+
+def main():
+    asyncio.run(export_messages())
+    
     
 #api_id = 18062170
 #api_hash = '9a97fd9dc96e745d5b8869966e21ace7'
@@ -126,10 +131,6 @@ def export_channels(channel_dict, export_file):
 
     with open(export_file, "wb") as f:
         f.write(all_channels.encode("latin1"))
-
-
-def main():
-    asyncio.run(export_messages())
     
  
 # ÉSTA PARTE PERTENECE AL SCRIPT ORIGINAL. AQUÍ COMMIT Y PUSH SE HACEN DESDE actions.yml
