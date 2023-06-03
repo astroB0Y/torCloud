@@ -65,7 +65,7 @@ tvg_ids_logos = {'GOL MUNDIAL HD': 'https://i.postimg.cc/3ryZ9n8G/golmundial.png
                  'SETANTA': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6gKALgnJ-yAuP-WEwXAioFZ98lGiaiOvaAh4JN4q8umxsMxiylU-meSp8jCuVfpcevcU&usqp=CAU',
                  'OTROS': 'https://i.imgur.com/U4w7Bgy.png'}
 
-group_title_order = ["GOL MUNDIAL", "GOL MUNDIAL 2", "manuK0S", "M+ LaLiga", "DAZN LaLiga", "M+ Champions", "DAZN F1", "DAZN",  "M+ Deportes", "M+ LaLiga BAR", "M+ LaLiga Smartbank", "EuroSport", "Otros"]
+group_title_order = ["DAZN F1", "GOL MUNDIAL", "GOL MUNDIAL 2", "manuK0S", "M+ LaLiga", "DAZN LaLiga", "M+ Champions", "DAZN", "M+ Deportes", "M+ LaLiga BAR", "M+ LaLiga Smartbank", "EuroSport", "Otros"]
 
 
 def extract_group_title(channel_title):
