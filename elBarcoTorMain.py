@@ -10,7 +10,7 @@ import os
 
 
 
-# LOG IN IN GITHUB
+
 '''
 try:
     SOME_SECRET = os.environ["SOME_SECRET"]
