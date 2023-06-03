@@ -91,8 +91,8 @@ def update_channel_dict(message_content, channel_dict):
                 channel_name = channel_name.replace("Tv", "TV")
             elif "#0 de Movistar" in channel_name:
                 channel_name = channel_name.replace("#0 de Movistar", "#0 M+ HD")
-            elif "Bar" in channel_name:
-                channel_name = channel_name.replace("#0 de Movistar", "#0 M+ HD")
+            elif "BarÃ§a" in channel_name:
+                channel_name = channel_name.replace("BarÃ§a", "Barça")
 
             channel_dict[channel_id] = channel_name
     return channel_dict
