@@ -18,7 +18,7 @@ except KeyError:
     SOME_SECRET = "Token not available!"
     #logger.info("Token not available!")
     #raise
-
+'''
     
 def cleanse_message(message_content):
     cleansed_content = ""
@@ -32,7 +32,7 @@ def cleanse_message(message_content):
                 else:
                   cleansed_content += "UNTITLED CHANNEL" + "\n" + row + "\n"
     return cleansed_content
-'''
+
 
 def update_channel_dict(message_content, channel_dict):
     rows = message_content.split("\n")
