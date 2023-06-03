@@ -9,8 +9,6 @@ import os
 #from telethon.tl.types import PeerChannel
 
 
-
-
 '''
 try:
     SOME_SECRET = os.environ["SOME_SECRET"]
@@ -19,6 +17,40 @@ except KeyError:
     #logger.info("Token not available!")
     #raise
 '''
+    
+#api_id = 18062170
+#api_hash = '9a97fd9dc96e745d5b8869966e21ace7'
+#peer_channel_id = -1727304456
+
+async def export_messages(export_file = "tags.txt"):
+
+    #async with TelegramClient('jgutierrezperez', api_id, api_hash) as client:
+        #channel_name = await client.get_entity(PeerChannel(peer_channel_id))
+
+        channel_dict = dict()  # {channel_id: channel_name}
+
+        try:
+            contenido_elBarco = scraper()
+            cleansed_content = cleanse_message(contenido_elBarco)
+            # comment out bottom 2 lines and uncomment line below to block elBarco
+            # cleansed_content = ""
+            #async for message in client.iter_messages(channel_name, limit=4):
+                # limit=x sets how many msgs in telegram are retreived
+                #message_content = message.message
+                #if message_content is not None:
+                    #cleansed_content += cleanse_message(message_content)
+                    #if cleansed_content:
+            channel_dict = update_channel_dict(cleansed_content, channel_dict)
+        except Exception as e:
+            print("elBarcoTorMain : ERROR :", e)
+            sys.exit(1)
+
+        #print("elBarcoTorMain : INFO : messages retrieved from Telegram")
+
+        export_channels(channel_dict, export_file)
+
+        print("elBarcoTorMain : INFO : list exported to local file")
+    
     
 def cleanse_message(message_content):
     cleansed_content = ""
@@ -94,40 +126,6 @@ def export_channels(channel_dict, export_file):
 
     with open(export_file, "wb") as f:
         f.write(all_channels.encode("latin1"))
-
-
-#api_id = 18062170
-#api_hash = '9a97fd9dc96e745d5b8869966e21ace7'
-#peer_channel_id = -1727304456
-
-async def export_messages(export_file = "tags.txt"):
-
-    #async with TelegramClient('jgutierrezperez', api_id, api_hash) as client:
-        #channel_name = await client.get_entity(PeerChannel(peer_channel_id))
-
-        channel_dict = dict()  # {channel_id: channel_name}
-
-        try:
-            contenido_elBarco = scraper()
-            cleansed_content = cleanse_message(contenido_elBarco)
-            # comment out bottom 2 lines and uncomment line below to block elBarco
-            # cleansed_content = ""
-            #async for message in client.iter_messages(channel_name, limit=4):
-                # limit=x sets how many msgs in telegram are retreived
-                #message_content = message.message
-                #if message_content is not None:
-                    #cleansed_content += cleanse_message(message_content)
-                    #if cleansed_content:
-            channel_dict = update_channel_dict(cleansed_content, channel_dict)
-        except Exception as e:
-            print("elBarcoTorMain : ERROR :", e)
-            sys.exit(1)
-
-        #print("elBarcoTorMain : INFO : messages retrieved from Telegram")
-
-        export_channels(channel_dict, export_file)
-
-        print("elBarcoTorMain : INFO : list exported to local file")
 
 
 def main():
