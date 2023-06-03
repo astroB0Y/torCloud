@@ -132,7 +132,7 @@ def main():
     asyncio.run(export_messages())
     
  
-# COMMIT Y PUSH SE HACEN DESDE actions.yml
+# ÉSTA PARTE PERTENECE AL SCRIPT ORIGINAL. AQUÍ COMMIT Y PUSH SE HACEN DESDE actions.yml
 '''
 def gitUpdate():
     gitRepo = r'/Users/Jorge/Documents/AcestreamScraper/AceTorScraper/github'
