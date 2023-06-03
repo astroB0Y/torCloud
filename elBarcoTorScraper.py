@@ -44,13 +44,13 @@ def scraper():
         print("elBarcoTorScraper : ERROR : channels could not be retrieved ")
 
     # TODO rewrite this extremely unelegant latin1 encoding
-    #contenido1 = contenido.replace('Ã§', 'ç', 1)
+    contenido1 = contenido.replace('Ã§', 'ç', 1)
     #contenido2 = contenido1.replace('Ã±', 'ñ')
     #contenido_lat = contenido2.replace('Ã³', 'ó')
 
     #with open('/Users/Jorge/Documents/AcestreamScraper/AceTorScraper/github/canales.txt', "w") as f:
     #    f.write(contenido_lat)
 
-    return contenido
+    return contenido1
 
 #scraper()
