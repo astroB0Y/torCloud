@@ -72,15 +72,15 @@ def extract_group_title(channel_title):
 	
 	title = channel_title.upper().replace("1080", "").replace("720", "")
 
-	if "_" in title:
-                return "manuK0S"
-	elif "DAZN" in title:
+	if "DAZN" in title:
 		if "LIGA" in title:
 			return "DAZN LaLiga"
 		elif "F1" in title or "FORMULA 1" in title or "FÓRMULA 1" in title:
 			return "DAZN F1"
 		else:
 			return "DAZN"
+	#elif "_" in title:
+                #return "manuK0S"	
 	elif "EUROSPORT" in title:
 		return "EuroSport"
 	elif "DEPORTES" in title or "VAMOS" in title or "GOLF" in title or "ELLAS" in title:
