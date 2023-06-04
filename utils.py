@@ -89,9 +89,9 @@ def extract_group_title(channel_title):
 		return "M+ LaLiga"
 	elif "SMARTBANK" in title or "SMARTBANCK" in title:
 		return "M+ LaLiga Smartbank"
-	elif "BAR" in title and "BARÇA" not in title and "BARCA" not in title:
+	elif "TV BAR" in title:
 		return "M+ LaLiga BAR"
-	elif "CAMPEONES" in title or "M.L." in title:
+	elif "CAMPEONES" in title:
 		return "M+ Champions"
 	elif "MUNDIAL" in title:
 		if "2" in title:
