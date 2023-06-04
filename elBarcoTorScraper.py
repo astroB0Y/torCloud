@@ -53,7 +53,7 @@ def scraper():
     #with open('/Users/Jorge/Documents/AcestreamScraper/AceTorScraper/github/canales.txt', "wb") as f:
     #    f.write(contenido_lat)
 
-    #contenido_lat = bytes(contenido, 'latin1')    
-    return contenido
+    contenido_lat = str(bytes(contenido, 'latin1'))   
+    #return contenido
 
 #scraper()
