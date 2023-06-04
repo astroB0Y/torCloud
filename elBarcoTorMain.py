@@ -56,7 +56,7 @@ async def export_messages(export_file = "tags.txt"):
 
         print("elBarcoTorMain : INFO : list exported to local file")
     
- '''   
+'''   
 def cleanse_message(message_content):
     cleansed_content = ""
     rows = [row for row in message_content.split("\n") if len(row.strip()) > 0]
