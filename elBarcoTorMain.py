@@ -56,7 +56,7 @@ async def export_messages(export_file = "tags.txt"):
 
         print("elBarcoTorMain : INFO : list exported to local file")
     
-'''   
+  
 def cleanse_message(message_content):
     cleansed_content = ""
     rows = [row for row in message_content.split("\n") if len(row.strip()) > 0]
@@ -69,7 +69,7 @@ def cleanse_message(message_content):
                 else:
                   cleansed_content += "UNTITLED CHANNEL" + "\n" + row + "\n"
     return cleansed_content
-'''
+
 
 def update_channel_dict(message_content, channel_dict):
     rows = message_content.split("\n")
