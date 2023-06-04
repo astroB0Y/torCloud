@@ -46,13 +46,14 @@ def scraper():
 
 
     # TODO rewrite this extremely unelegant latin1 encoding
-    contenido1 = contenido.replace('Ã§', 'ç', 1)
+    #contenido1 = contenido.replace('Ã§', 'ç', 1)
     #contenido2 = contenido1.replace('Ã±', 'ñ')
     #contenido_lat = contenido2.replace('Ã³', 'ó')
 
     #with open('/Users/Jorge/Documents/AcestreamScraper/AceTorScraper/github/canales.txt', "wb") as f:
     #    f.write(contenido_lat)
 
-    return contenido1.encode("latin1")
+    contenido_lat = bytes(contenido, 'latin1')    
+    return contenido_lat
 
 #scraper()
