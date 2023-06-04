@@ -153,9 +153,9 @@ acestream://c95422bc904378be0b035eba721d5e6a004f7d79
 acestream://a1bd609a2d64d1ee4b81af32464b36848fe36541
 #EXTINF:-1 group-title="Otros" tvg-id="Sport TV3 POR HD" tvg-logo="https://img2.sport-tv-guide.live/images/stations/a452.png" ,Sport TV 3 1080  6c52
 acestream://6c526d4cc3ca77cfbc10c548aa0d49944e56f3ff
-#EXTINF:-1 group-title="Otros" tvg-id="I873.76943.schedulesdirect.org" tvg-logo="https://i.imgur.com/XcjYBfj.png" ,beIN SPORTS ñ  4853
+#EXTINF:-1 group-title="Otros" tvg-id="I873.76943.schedulesdirect.org" tvg-logo="https://i.imgur.com/XcjYBfj.png" ,beIN SPORTS Ã±  4853
 acestream://4853a0bd4fd17f85f563267feb6aec3319a3ac1d
-#EXTINF:-1 group-title="Otros" tvg-id="BARÇA TV" tvg-logo="https://img.sport-tv-guide.live/images/tv-station-barca-tv-1456.png" ,Barça 720  e336
+#EXTINF:-1 group-title="Otros" tvg-id="BARÇA TV" tvg-logo="https://img.sport-tv-guide.live/images/tv-station-barca-tv-1456.png" ,BarÃ§a 720  e336
 acestream://e3362507e7c732b9461bd7bdc74bd054c49b3ba7
 #EXTINF:-1 group-title="Otros" tvg-id="I249.19158.schedulesdirect.org" tvg-logo="https://raw.githubusercontent.com/astroB0Y/logos/main/ESPN.jpg" ,ESPN COLOMBIA  2492
 acestream://2492f8aa7cd7c4800e7b22c4ecba05e34c18be00
