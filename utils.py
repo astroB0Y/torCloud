@@ -35,7 +35,7 @@ tvg_ids_logos = {'GOL MUNDIAL HD': 'https://i.postimg.cc/3ryZ9n8G/golmundial.png
                  'M+ Liga de Campeones 5 HD': 'https://img.sport-tv-guide.live/images/tv-station-movistar-liga-de-campeones-5-1550.png',
                  'M+ Liga de Campeones 6 HD': 'https://img.sport-tv-guide.live/images/tv-station-movistar-liga-de-campeones-6-1551.png',
                  'M+ #0 HD': 'https://img.sport-tv-guide.live/images/stations/a371.png',
-                 'BARÇA TV': 'https://img.sport-tv-guide.live/images/tv-station-barca-tv-1456.png',
+                 'Barça TV': 'https://img.sport-tv-guide.live/images/tv-station-barca-tv-1456.png',
                  'BE MAD': 'https://img.sport-tv-guide.live/images/tv-station-be-mad-621.png',
                  'CUATRO HD': 'https://img.sport-tv-guide.live/images/tv-station-cuatro-619.png',
                  'GOL PLAY': 'https://i.ibb.co/5hYsXDR/Gol.jpg',
