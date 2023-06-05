@@ -65,7 +65,7 @@ tvg_ids_logos = {'GOL MUNDIAL HD': 'https://i.postimg.cc/3ryZ9n8G/golmundial.png
                  'SETANTA': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6gKALgnJ-yAuP-WEwXAioFZ98lGiaiOvaAh4JN4q8umxsMxiylU-meSp8jCuVfpcevcU&usqp=CAU',
                  'OTROS': 'https://i.imgur.com/U4w7Bgy.png'}
 
-group_title_order = ["DAZN F1", "GOL MUNDIAL", "GOL MUNDIAL 2", "manuK0S", "M+ LaLiga", "DAZN LaLiga", "M+ Champions", "DAZN", "M+ Deportes", "M+ LaLiga BAR", "M+ LaLiga Smartbank", "EuroSport", "Otros"]
+group_title_order = ["DAZN F1", "GOL MUNDIAL", "GOL MUNDIAL 2", "manuK0S", "M+ LaLiga", "DAZN LaLiga", "M+ Champions", "DAZN", "M+ Deportes", "M+ LaLiga BAR", "M+ LaLiga Smartbank", "EuroSport", "Otros deportes", "Otros"]
 
 
 def extract_group_title(channel_title):
@@ -81,8 +81,8 @@ def extract_group_title(channel_title):
 			return "DAZN"
 	#elif "_" in title:
                 #return "manuK0S"	
-	elif "EUROSPORT" in title:
-		return "EuroSport"
+	#elif "EUROSPORT" in title:
+		#return "EuroSport"
 	elif "DEPORTES" in title or "VAMOS" in title or "GOLF" in title or "ELLAS" in title:
 		return "M+ Deportes"
 	elif "LIGA" in title and "BAR" not in title and "DAZN" not in title and "SMARTBANK" not in title and "CAMPEONES" not in title:
@@ -98,7 +98,7 @@ def extract_group_title(channel_title):
 			return "GOL MUNDIAL 2"
 		else:
 			return "GOL MUNDIAL"
-	elif "GOL" in title or "TDP" in title or "TENNIS" in title or "SPORT" in title or "BARÃ§A" in title or "ESPN" in title or "SETENTA" in title:
+	elif "GOL" in title or "TDP" in title or "TENNIS" in title or "SPORT" in title or "BARÇA" in title or "ESPN" in title or "SETENTA" in title or "EUROSPORT" in title:
 		return "Otros deportes"
 	else:
 		return "Otros"
