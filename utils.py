@@ -107,7 +107,7 @@ def extract_tvg_id(channel_title):
 	title = channel_title.upper().replace("1080", "").replace("720", "")
 
 	if "BARÇA" in title or "BARCA" in title or "BARÃ§A" in title:
-		return "BARÇA TV"
+		return "Barça TV"
 	elif "BE MAD" in title or "BEMAD" in title:
 		return "BE MAD"
 	elif "CUATRO" in title:
