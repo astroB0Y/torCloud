@@ -98,6 +98,8 @@ def extract_group_title(channel_title):
 			return "GOL MUNDIAL 2"
 		else:
 			return "GOL MUNDIAL"
+	elif "GOL" in title or "TDP" in title or "TENNIS" in title or "SPORT" in title or "BARÃ§A" in title or "ESPN" in title or "SETENTA" in title:
+		return "Otros deportes"
 	else:
 		return "Otros"
 
