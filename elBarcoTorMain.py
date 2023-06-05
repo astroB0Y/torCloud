@@ -133,10 +133,10 @@ def export_channels(channel_dict, export_file):
                                                .replace("CHANNELTITLE", channel_info["channel_name"])
 
 
-    with open(export_file, "wb") as f:
-        f.write(all_channels.encode("latin1"))
+    with open(export_file, "w") as f:
+        f.write(all_channels)
     #with open(export_file, "wb") as f:
-        #f.write(all_channels.encode("utf-8"))
+        #f.write(all_channels.encode("latin1"))
     
  
 # ÉSTA PARTE PERTENECE AL SCRIPT ORIGINAL. AQUÍ COMMIT Y PUSH SE HACEN DESDE actions.yml
