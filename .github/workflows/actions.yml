@@ -6,8 +6,6 @@ on:
   schedule:
     # Run every minute (every 5 minutes only in GitHub)
     #- cron: '* * * * *'
-    # Run every half an hour
-    #- cron: '0,30 * * * *'
     # Run hourly
     - cron: '0 * * * *'
 
@@ -28,6 +26,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.9' # install the python version needed
+          cache: 'pip' # caching pip dependencies
           
       - name: install python packages
         run: |
