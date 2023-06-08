@@ -22,6 +22,7 @@ def scraper():
                     grab = sess.get("https://elcano.top")
                     print(grab)
         except:
+            print("program has gone through except in torScraper line 25")
             pass
 
     soup = BeautifulSoup(grab.text, 'html.parser')
