@@ -43,7 +43,8 @@ def scraper():
         print("elBarcoTorScraper : INFO : channels retrieved from elBarco")
     else:
         print("elBarcoTorScraper : ERROR : channels could not be retrieved ")
-        sys.exit(1)
+        scraper()
+        #sys.exit(1)
 
 
     # TODO rewrite this extremely unelegant latin1 encoding
