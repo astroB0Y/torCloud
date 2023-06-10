@@ -1,6 +1,6 @@
-import asyncio
+#import asyncio
 import sys
-import io
+#import io
 from bs4 import BeautifulSoup
 from torpy.http.requests import TorRequests
 
