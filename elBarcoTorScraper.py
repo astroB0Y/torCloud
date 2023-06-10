@@ -23,7 +23,7 @@ def scraper():
                     print(grab)
         except:
             print("elBarcoTorScraper : ERROR : line 25")
-            sys.exit(0)
+            sys.exit(1)
 
     soup = BeautifulSoup(grab.text, 'html.parser')
     for enlace in soup.find_all('a'):
@@ -43,8 +43,8 @@ def scraper():
         print("elBarcoTorScraper : INFO : channels retrieved from elBarco")
     else:
         print("elBarcoTorScraper : ERROR : channels could not be retrieved")
-        scraper()
-        #sys.exit(1)
+        #scraper()
+        sys.exit(0)
 
 
     # TODO rewrite this extremely unelegant latin1 encoding
