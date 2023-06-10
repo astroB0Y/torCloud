@@ -45,8 +45,6 @@ async def export_messages(export_file = "tags.txt"):
         #print("exportMessages : OK : messages retrieved from Telegram")
 
         export_channels(channel_dict, export_file)
-
-        print("exportMessages : OK : list exported to Github")
     
   
 def cleanse_message(message_content):
@@ -124,9 +122,15 @@ def export_channels(channel_dict, export_file):
                                                .replace("CHANNELID", channel_info["channel_id"]) \
                                                .replace("CHANNELTITLE", channel_info["channel_name"])
 
-
-    with open(export_file, "w") as f:
-        f.write(all_channels)
+    if all_channels != "":
+        with open(export_file, "w") as f:
+            f.write(all_channels)
+            print("exportMessages : OK : list exported to Github")
+    else:
+        print("exportMessages : ERROR : list is empty")
+        
+    #with open(export_file, "w") as f:
+        #f.write(all_channels)
     #with open(export_file, "wb") as f:
         #f.write(all_channels.encode("latin1"))
     
