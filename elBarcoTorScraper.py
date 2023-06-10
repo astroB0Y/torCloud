@@ -22,8 +22,8 @@ def scraper():
                     grab = sess.get("https://elcano.top")
                     print(grab)
         except:
-            print("program has gone through except in torScraper line 25")
-            pass
+            print("elBarcoTorScraper : ERROR : line 25")
+            sys.exit(0)
 
     soup = BeautifulSoup(grab.text, 'html.parser')
     for enlace in soup.find_all('a'):
@@ -42,7 +42,7 @@ def scraper():
         #print(contenido, flush=True)
         print("elBarcoTorScraper : INFO : channels retrieved from elBarco")
     else:
-        print("elBarcoTorScraper : ERROR : channels could not be retrieved ")
+        print("elBarcoTorScraper : ERROR : channels could not be retrieved")
         scraper()
         #sys.exit(1)
 
