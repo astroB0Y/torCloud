@@ -47,14 +47,14 @@ async def export_messages(export_file = "tags.txt"):
                     #if cleansed_content:
             channel_dict = update_channel_dict(cleansed_content, channel_dict)
         except Exception as e:
-            print("elBarcoTorMain : ERROR :", e)
+            print("exportMessages : ERROR :", e)
             sys.exit(1)
 
-        #print("elBarcoTorMain : INFO : messages retrieved from Telegram")
+        #print("exportMessages : OK : messages retrieved from Telegram")
 
         export_channels(channel_dict, export_file)
 
-        print("elBarcoTorMain : INFO : list exported to local file")
+        print("exportMessages : OK : list exported to Github")
     
   
 def cleanse_message(message_content):
