@@ -125,9 +125,9 @@ def export_channels(channel_dict, export_file):
     if all_channels != "":
         with open(export_file, "w") as f:
             f.write(all_channels)
-            print("exportMessages : OK : list exported to Github")
+            print("exportChannels : OK : list exported to Github")
     else:
-        print("exportMessages : ERROR : list is empty")
+        print("exportChannels : ERROR : list is empty")
         
     #with open(export_file, "w") as f:
         #f.write(all_channels)
