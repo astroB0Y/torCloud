@@ -12,7 +12,7 @@ def scraper():
     grab = None
     lista = ""
     #global contenido
-    print('elBarcoTorScraper : INFO : scraping with tor...', flush=True)
+    print('elBarcoTorScraper : INFO : stay in tune...', flush=True)
 
 # TODO set a count loop
     while grab is None:
@@ -40,7 +40,7 @@ def scraper():
 
     if contenido != "":
         #print(contenido, flush=True)
-        print("elBarcoTorScraper : INFO : channels retrieved from elBarco")
+        print("elBarcoTorScraper : OK : channels retrieved")
     else:
         print("elBarcoTorScraper : ERROR : channels could not be retrieved")
         #scraper()
