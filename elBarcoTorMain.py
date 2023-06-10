@@ -1,22 +1,14 @@
-from git import Repo
+#from git import Repo
 import utils as u
 import re
 from elBarcoTorScraper import *
 import asyncio
-import os
+#import os
 #from telethon.sync import TelegramClient
 #from telethon import TelegramClient
 #from telethon.tl.types import PeerChannel
 
 
-'''
-try:
-    SOME_SECRET = os.environ["SOME_SECRET"]
-except KeyError:
-    SOME_SECRET = "Token not available!"
-    #logger.info("Token not available!")
-    #raise
-'''
 
 
 def main():
