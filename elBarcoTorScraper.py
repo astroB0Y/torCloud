@@ -44,7 +44,7 @@ def scraper():
     else:
         print("elBarcoTorScraper : ERROR : channels could not be retrieved")
         #scraper()
-        sys.exit(0)
+        sys.exit(1)
 
 
     # TODO rewrite this extremely unelegant latin1 encoding
